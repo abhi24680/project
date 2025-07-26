@@ -1,8 +1,29 @@
 {
   "demo_summary": {
-    "motion_detections": 0,
-    "energy_saves": 0,
-    "total_events": 0
+    "motion_detections": 2,
+    "energy_saves": 2,
+    "total_events": 4
   },
-  "events": []
+  "events": [
+    {
+      "timestamp": "15:28:23",
+      "motion_detected": false,
+      "action": "Appliances turned OFF"
+    },
+    {
+      "timestamp": "15:28:31",
+      "motion_detected": true,
+      "action": "Appliances turned ON"
+    },
+    {
+      "timestamp": "15:28:41",
+      "motion_detected": false,
+      "action": "Appliances turned OFF"
+    },
+    {
+      "timestamp": "15:28:47",
+      "motion_detected": true,
+      "action": "Appliances turned ON"
+    }
+  ]
 }
