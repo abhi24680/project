@@ -1,0 +1,35 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "motion_detection": {
+    "sensitivity": 25,
+    "min_area": 1000,
+    "var_threshold": 50,
+    "detect_shadows": true
+  },
+  "energy_control": {
+    "no_motion_timeout": 60,
+    "use_gpio": false,
+    "use_mqtt": false,
+    "light_pin": 18,
+    "fan_pin": 19
+  },
+  "mqtt": {
+    "broker": "localhost",
+    "port": 1883,
+    "keepalive": 60,
+    "topics": {
+      "lights": "classroom/lights",
+      "fans": "classroom/fans"
+    }
+  },
+  "logging": {
+    "log_file": "energy_saver.log",
+    "events_file": "motion_events.json",
+    "level": "INFO"
+  }
+}
